@@ -46,10 +46,16 @@
 /* main */
 
 .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin-top: 20px;
   background-image: url(../Images/main.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .main-text {
@@ -108,5 +114,58 @@
   .main-form {
     flex-direction: row;
     gap: 10px;
+  }
+}
+/* tour */
+
+.tour {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tour-text h2 {
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.tour-text p {
+  padding: 25px 0;
+}
+
+.tour-list li {
+  padding: 20px 0 0 20px;
+}
+
+.tour-text button {
+  color: white;
+  background-color: #ff5400;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+}
+
+.tour-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-img img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .tour {
+    flex-direction: row;
+    padding-top: 70px;
+    gap: 30px;
+  }
+
+  .tour-text {
+    width: 70%;
+  }
+  .tour-img img {
+    width: 100%;
   }
 }
