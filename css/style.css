@@ -7,6 +7,7 @@
 .container {
   width: 80%;
   margin: auto;
+  padding: 40px 0;
 }
 
 /* navigation bar */
@@ -15,7 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
 }
 
 .nav-logo {
@@ -50,7 +50,6 @@
   align-items: center;
   justify-content: center;
   height: 60vh;
-  margin-top: 20px;
   background-image: url(../Images/main.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -122,7 +121,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 30px 0;
 }
 
 .tour-text h2 {
@@ -159,7 +157,6 @@
 @media (min-width: 992px) {
   .tour {
     flex-direction: row;
-    padding-top: 70px;
     gap: 30px;
   }
 
@@ -219,5 +216,62 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+}
+
+/* why chose us */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-col-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-1 {
+  border: 1px solid #fbb563;
+  background-color: #fbb46315;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.card-1 h2 {
+  padding: 10px 0;
+}
+
+.card-2 {
+  border: 1px solid #29cef6;
+  background-color: #29cdf615;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.card-2 h2 {
+  padding: 10px 0;
+}
+.card-3 {
+  border: 1px solid #e94444;
+  background-color: #e9444415;
+  border-radius: 7px;
+  padding: 30px;
+}
+.card-3 h2 {
+  padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+  .card-col-1 {
+    flex-direction: row;
+  }
+  .card-col-2 {
+    width: 50%;
   }
 }
